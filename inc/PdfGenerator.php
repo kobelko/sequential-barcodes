@@ -114,6 +114,7 @@ class PdfGenerator extends TCPDF
 
     /**
      * Calculate the number of pages containing barcodes, the last page might not be full
+     *
      * @return integer
      */
     function getTotalPages()
@@ -123,6 +124,7 @@ class PdfGenerator extends TCPDF
 
     /**
      * Calculate the number of barcodes that a particular page contains
+     *
      * @param integer $page
      * @return integer
      */
@@ -141,7 +143,9 @@ class PdfGenerator extends TCPDF
 
     /**
      * Add to the document a new page full of barcodes
-     * @param integer $page The number of page being added. Please, call this method sequentially (1, 2, 3, ...)
+     *
+     * @param integer $page
+     *            The number of page being added. Please, call this method sequentially (1, 2, 3, ...)
      */
     function addNewPage($page)
     {
